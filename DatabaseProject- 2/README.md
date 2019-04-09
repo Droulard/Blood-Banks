@@ -1,3 +1,0 @@
-# DatabaseProject
-Blood Bank Project
-
