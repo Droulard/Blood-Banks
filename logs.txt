@@ -1,1 +1,13 @@
-Created on: 4/9/2019 11:22:24
+Created on: 4/9/2019 11:36:49
+Transaction date: 4/9/2019 11:36:49
+2020-01-02 Donation Made for Clarkston
+Transaction date: 4/9/2019 11:36:49
+2020-01-02 Request Made for Clarkston
+Transaction date: 4/9/2019 11:36:49
+2020-01-02Donation made from Pavlov
+Transaction date: 4/9/2019 11:36:49
+Request Made:
+Date: 2020-01-01
+Hospital Name: St. Joseph
+Quantity: 600
+Blood Type: O+
