@@ -32,7 +32,7 @@
 						<h1>Blood Banks</h1>
                         <ul>
                             <li class="btn btn-theme btn-list" id="tab"><a href="#tab-1">Inventory Transactions</a></li>
-							<li class="btn btn-theme btn-list" id="tab"><a href="#tab-2" onclick="CheckInventoryTransForm()">View Inventory</a></li>
+							<li class="btn btn-theme btn-list" id="tab"><a href="#tab-2" >View Inventory</a></li>
                             <li class="btn btn-theme btn-list" id="tab"><a href="#tab-3" onclick="CheckDonationForm()">Create Donation Entry</a></li>
                             <li class="btn btn-theme btn-list" id="tab"><a href="#tab-4" onclick="CheckRequestForm()">Create Hospital Request</a></li>
 
@@ -64,7 +64,7 @@
 							<textarea readonly name="message"  rows="18" data-rule="required" placeholder="Output">{% raw output%}</textarea>
 							<br>
 							<br>
-							<input type="submit" name="updateinv" class="btn btn-theme" id="InventoryTransSubmitButton" value="Commit to Inventory">
+							<input type="submit" name="updateinv" class="btn btn-theme"  value="Commit to Inventory">
                         </form>
 						
 						<!--tab 2: View Inventory Form -->
@@ -128,7 +128,7 @@
 								</select>
 							<br>
 							<br>
-							<input type="submit" class="btn btn-theme" name="donation" value="Commit to Donations">
+							<input type="submit" class="btn btn-theme" id= "DonationSubmitButton" name="donation" value="Commit to Donations">
                         </form>
 
                         <!-- tab 4: Request form -->
@@ -166,7 +166,7 @@
 							<input type="number" name="quantity" min='500' placeholder="500">
 							<br>
 							<br>
-							<input type="submit" class="btn btn-theme" name="req" value="Commit to Requests">
+							<input type="submit" class="btn btn-theme" id = "RequestSubmitButton" name="req" value="Commit to Requests">
                         </form>
                     </div>
                 </div>
