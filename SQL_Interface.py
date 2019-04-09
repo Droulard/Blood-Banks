@@ -368,14 +368,14 @@ def checkinv(city):
             "WHERE INV_ID = (SELECT INV_ID FROM BLOOD_BANK WHERE CITY = %s)"
     cur.execute(sqlib, city)
     res = cur.fetchall()
-    outstr = """Iventory for """ + city + ':\n'
+    outstr = """Inventory for """ + city + ':\n'
     # btypes is a global array containing all of the blood types
     for r in btypes:
-        outstr += r.ljust(20)
+        outstr += r.ljust(15)
     outstr += '\n'
 
     for j in range(0, 8):
-        outstr += str(res[0][j]).ljust(19)
+        outstr += str(res[0][j]).ljust(15)
         val[j] += res[0][j]
     return outstr, val
 
@@ -401,7 +401,7 @@ def up(addarr, city):
             "`B+` = `B+` + %s, " \
             "`B-` = `B-` + %s, " \
             "`AB+` = `AB+` + %s, " \
-            "`AB-` = `AB-` + %s " \
+            "`AB-` = `AB-` + %s" \
             "WHERE `INV_ID` = %s; "
     cur.execute(sqlup, addarr)
     print("SQL EXE")
