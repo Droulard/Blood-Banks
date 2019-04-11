@@ -1,4 +1,6 @@
-# TODO: Create a way of generating pdf reports: this function is not needed but extra if time allows
+"""
+Import SQL and Create a connector
+"""
 import pymysql
 import file_writer as fw
 
@@ -401,7 +403,7 @@ def up(addarr, city):
             "`B+` = `B+` + %s, " \
             "`B-` = `B-` + %s, " \
             "`AB+` = `AB+` + %s, " \
-            "`AB-` = `AB-` + %s" \
+            "`AB-` = `AB-` + %s " \
             "WHERE `INV_ID` = %s; "
     cur.execute(sqlup, addarr)
     print("SQL EXE")
