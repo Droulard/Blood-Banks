@@ -5,7 +5,7 @@ import pymysql
 import file_writer as fw
 
 # Create Connection
-connection = pymysql.connect(host='localhost', user='root', password='13283Loon$',
+connection = pymysql.connect(host='localhost', user='root', password='password',
                              db='Database Project')
 
 cur = connection.cursor()
